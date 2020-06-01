@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;1,100;1,300&display=swap');
+
+@keyframes bounce {
+  0%   {transform:scale(1.05);}
+  25%  {transform:initial;}
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+background-image: linear-gradient(to right, #e0e0e1, #edebe6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-row{
+  background-color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-body{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.pokemon-title{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-img-top{
+  background-color: #edebe6;
+}
+
+.card:hover{ /*used to be card-img-top*/
+  animation-name: bounce;
+  animation-duration: 2.5s;
+}
+
+.pokemon-id{
+  color: #97a19a;
+}
+
+.pokemon-name{
+  font-size: 1.5em;
+}
+
+.card{
+  width: 15rem; /*orignal = 30*/
+  border-radius: 0;
+  -moz-user-select: none;
+  -website-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+.infoImage{
+  width: 15rem;
+}
+
+.infoImageWrapper{
+  background-color: #edebe6;
+}
+
+.infoFlavor{
+  background-color: #edebe6 !important; /*#94bdff*/
+}
+
+.infoProperties{
+  background-color: #edebe6 !important; /*#94bdff*/
+}
+
+.infoTypes{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.infoStats{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cardwrap{
+  background-color: #ffffff;
+}
+
+.navbar-brand{
+  cursor: pointer;
+}
+
+.navbar-top{
+background-color: #ef5350;
+color: #ffffff;
+}
+
+.footer{
+  color: #ffffff;
+}
+
+.row{
+  background-color: #ffffff;
+}
+
+.wrap-container{
+  background-color: #ffffff;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+}
+
+.link:focus{
+  text-decoration: none;
+  color: black;}
+
+.link:hover {
+  text-decoration: none;
+  color: black;}
+
+.link:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.link-nav{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.link-nav:focus{
+  text-decoration: none;
+  color: white;}
+
+.link-nav:hover {
+  text-decoration: none;
+  color: white;}
+
+.link-nav:visited{
+  text-decoration: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infolink:before
+{
+    content: '?';
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 2.3ex;
+    height: 2.3ex;
+    font-size: 1.4ex;
+    line-height: 1.8ex;
+    border-radius: 1.2ex;
+    margin-right: 4px;
+    padding: 1px;
+    color: blue;
+    background: white;
+    border: 1px solid blue;
+    text-decoration: none;
+}
+
+.infolink:hover:before
+{
+    color: white;
+    background: blue;
+    border-color: white;
+    text-decoration: none;
+}
+
+.bottom-row{
+  padding-bottom:10px;
+}  
+
+@media (max-width: 991px){
+    .col-margin{
+        margin-bottom: 10px;
+    }
 }
